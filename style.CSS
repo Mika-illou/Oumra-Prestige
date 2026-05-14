@@ -1,0 +1,332 @@
+:root {
+    --op-gold: #D4A017;
+    --op-gold-dark: #b88a10;
+    --op-bg: #f4f4f4;
+}
+
+body {
+    background-color: var(--op-bg);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1a1a !important;
+}
+
+.brand-badge {
+    width: 36px;
+    height: 36px;
+    background: var(--op-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: .8rem;
+    letter-spacing: -.5px;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: .9rem;
+}
+
+.btn-connexion {
+    border: 2px solid #6c757d;
+    color: #FFFFFF !important;
+    border-radius: 30px !important;
+    padding: 6px 20px;
+    font-weight: 500;
+    background-color: #5D6572 !important;
+}
+
+.btn-inscrire {
+     background: #D4A018 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 30px !important;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-inscrire:hover {
+    background: #f0c352 !important;
+    color: #fff;
+}
+
+.btn-connexion:hover {
+    background: #1e2e3e !important;
+    color: #fff;
+}
+/* ── Card ── */
+.login-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .07);
+    max-width: 420px;
+    width: 100%;
+}
+
+.avatar-circle {
+    width: 64px;
+    height: 64px;
+    background: var(--op-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+}
+
+.avatar-circle i {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.login-card h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.login-card .subtitle {
+    color: #777;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: .35rem;
+}
+
+.form-control {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: .65rem 1rem;
+    font-size: .9rem;
+    color: #444;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+}
+
+.form-control:focus {
+    border-color: var(--op-gold);
+    box-shadow: 0 0 0 3px rgba(212, 160, 23, .15);
+}
+
+.form-check-label {
+    font-size: .85rem;
+    color: #555;
+    font-weight: 400;
+}
+
+.forgot-link {
+    font-size: .85rem;
+    color: var(--op-gold);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover {
+    color: var(--op-gold-dark);
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background: var(--op-gold);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: .75rem;
+    font-weight: 600;
+    font-size: .95rem;
+    width: 100%;
+    transition: background .2s;
+}
+
+.btn-submit:hover {
+    background: var(--op-gold-dark);
+    color: #fff;
+}
+
+/* ── OR divider ── */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: #bbb;
+    font-size: .8rem;
+    margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+/* ── Social buttons ── */
+.btn-social {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: .65rem;
+    font-size: .9rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    transition: background .15s, border-color .15s;
+    text-decoration: none;
+}
+
+.btn-social:hover {
+    background: #f9f9f9;
+    border-color: #bbb;
+    color: #111;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.fb-icon {
+    color: #1877F2;
+    font-size: 1.1rem;
+}
+
+.signup-text {
+    font-size: .85rem;
+    color: #777;
+}
+
+.signup-text a {
+    color: var(--op-gold);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.secure-note {
+    font-size: .8rem;
+    color: #888;
+    margin-top: 1.25rem;
+}
+
+.secure-note i {
+    color: #28a745;
+}
+
+footer {
+    background: var(--dark);
+    color: #ccc;
+    padding: 3rem 2rem 1.5rem;
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.footer-desc {
+    font-size: 0.85rem;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color .2s;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.footer-contact p {
+    font-size: 0.88rem;
+    color: #aaa;
+    margin-bottom: 0.4rem;
+}
+
+.social-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #1e2e3e;
+    border: none;
+    color: #ccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background .2s, color .2s;
+    margin-right: 0.4rem;
+}
+
+.social-btn:hover {
+    background: var(--gold);
+    color: #fff;
+}
+
+.footer-divider {
+    border-color: #2a3a4a;
+    margin: 1.8rem 0 1rem;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}

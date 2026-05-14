@@ -1,0 +1,314 @@
+:root {
+    --gold: #F5A623;
+    --dark-navy: #1a1f2e;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+.navbar-brand .logo-icon {
+    width: 38px;
+    height: 38px;
+    background: var(--gold);
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: .85rem;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1f2e;
+}
+
+.nav-link {
+    color: #444 !important;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: var(--gold) !important;
+}
+
+.btn-connexion {
+    border: 2px solid #6c757d;
+    color: #FFFFFF !important;
+    border-radius: 30px !important;
+    padding: 6px 20px;
+    font-weight: 500;
+    background-color: #5D6572 !important;
+}
+
+.btn-inscrire {
+    background: var(--gold) !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 30px !important;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-inscrire:hover {
+   background: #f2b552 !important;
+   color: #fff;
+}
+
+.btn-connexion:hover {
+    background: #1e2e3e !important;
+    color: #fff;
+}
+
+/* ── HERO 
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(15, 20, 35, .45), rgba(15, 20, 35, .45)),
+        url('/image/sultan-ahmed-mosque-istanbul-turkey.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, .9);
+}
+
+.btn-reserver {
+    background: var(--gold) !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    transition: transform .2s;
+}
+
+.btn-reserver:hover {
+    background: #d4891a;
+    color: #fff;
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.services h2 {
+    font-weight: 800;
+    color: var(--dark-navy);
+    margin-bottom: 48px;
+}
+
+.service-card {
+    border: none;
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .07);
+    height: 100%;
+    transition: transform .2s;
+    /* text-align: start !important; */
+}
+.service-card:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+
+.service-card.gold-bg {
+    background: #fffbf0;
+}
+
+.service-card.green-bg {
+    background: #f0fff4;
+}
+
+.service-card.blue-bg {
+    background: #f0f6ff;
+}
+
+.icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+.ic-gold {
+    background: var(--gold);
+}
+
+.ic-green {
+    background: #22c55e;
+}
+
+.ic-blue {
+    background: #3b82f6;
+}
+
+.service-card h5 {
+    font-weight: 700;
+    color: var(--dark-navy);
+}
+
+.service-card p {
+    color: #555;
+    font-size: .95rem;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.testimonials h2 {
+    font-weight: 800;
+    color: var(--dark-navy);
+    margin-bottom: 48px;
+}
+
+.testi-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .07);
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: .85rem;
+    color: #fff;
+}
+
+.av-gold {
+    background: var(--gold);
+}
+
+.av-green {
+    background: #22c55e;
+}
+
+.testi-card .name {
+    font-weight: 700;
+    font-size: .95rem;
+    color: #1a1f2e;
+}
+
+.testi-card .date {
+    font-size: .8rem;
+    color: #888;
+}
+
+.testi-card p {
+    color: #444;
+    font-style: italic;
+    margin-top: 14px;
+    font-size: .93rem;
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark-navy);
+    color: #ccc;
+    padding: 60px 0 20px;
+}
+
+footer .brand {
+    color: var(--gold);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+footer p.tagline {
+    font-size: .9rem;
+    color: #aaa;
+    margin-top: 8px;
+}
+
+footer h6 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: .9rem;
+}
+
+footer a:hover {
+    color: var(--gold);
+}
+
+footer .contact-item {
+    font-size: .9rem;
+    margin-bottom: 8px;
+}
+
+.social-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #2e3549;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background: var(--gold);
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2e3549;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: .85rem;
+}

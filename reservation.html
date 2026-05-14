@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oumra Prestige – Réservation</title>
+  <link rel="stylesheet" href="reservation.CSS">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--  NAVBAR  -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="logo-icon">OP</span>
+        <span>Oumra Prestige</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="/acceille.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="/a propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/reservation.html">Réservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="/index.html"><button class="btn btn-connexion">Connexion</button></a>
+          <a href="/inscription.html"><button class="btn btn-inscrire">S'inscrire</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--  HERO BANNER -->
+  <section class="hero-banner">
+    <h1>Réservez votre Oumra</h1>
+    <p>Commencez votre voyage spirituel avec nous</p>
+  </section>
+
+  <!-- FORM  -->
+  <section class="form-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="form-card">
+
+            <!-- ① Informations personnelles -->
+            <div class="section-title">
+              <span class="step-badge">1</span> Informations personnelles
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Nom *</label>
+                <input type="text" class="form-control" placeholder="Votre nom" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Prénom *</label>
+                <input type="text" class="form-control" placeholder="Votre prénom" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email *</label>
+                <input type="email" class="form-control" placeholder="votre.email@exemple.ne" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Téléphone *</label>
+                <input type="tel" class="form-control" placeholder="+227 12 34 56 78" />
+              </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- ② Détails du voyage -->
+            <div class="section-title">
+              <span class="step-badge">2</span> Détails du voyage
+            </div>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Type de formule *</label>
+                <select class="form-select">
+                  <option value="" disabled selected>Choisir une formule</option>
+                  <option>Standard</option>
+                  <option>Confort</option>
+                  <option>Prestige VIP</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Durée du séjour *</label>
+                <select class="form-select">
+                  <option value="" disabled selected>Choisir une durée</option>
+                  <option>7 jours</option>
+                  <option>10 jours</option>
+                  <option>14 jours</option>
+                  <option>21 jours</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Date de départ *</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Nombre de personnes *</label>
+                <input type="number" class="form-control" value="1" min="1" max="20" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Aéroport de départ *</label>
+                <select class="form-select">
+                  <option value="" disabled selected>Choisir un aéroport</option>
+                  <option>Niamey – Aéroport International Diori Hamani</option>
+                  <option>Agadez – Aéroport Mano Dayak</option>
+                  <option>Zinder – Aéroport de Zinder</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- ③ Options supplémentaires -->
+            <div class="section-title">
+              <span class="step-badge">3</span> Options supplémentaires
+            </div>
+
+            <div class="option-item form-check d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" type="checkbox" id="opt1" onchange="updateTotal()" />
+              <div>
+                <div class="option-label">Assistance visa</div>
+                <div class="option-desc">Nous nous occupons de toutes les démarches administratives (+150€)</div>
+              </div>
+            </div>
+            <div class="option-item form-check d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" type="checkbox" id="opt2" onchange="updateTotal()" />
+              <div>
+                <div class="option-label">Assurance voyage</div>
+                <div class="option-desc">Protection complète pendant votre séjour (+100€)</div>
+              </div>
+            </div>
+            <div class="option-item form-check d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" type="checkbox" id="opt3" onchange="updateTotal()" />
+              <div>
+                <div class="option-label">Guide privé</div>
+                <div class="option-desc">Accompagnement personnalisé exclusif (+500€)</div>
+              </div>
+            </div>
+            <div class="option-item form-check d-flex gap-3">
+              <input class="form-check-input flex-shrink-0" type="checkbox" id="opt4" onchange="updateTotal()" />
+              <div>
+                <div class="option-label">Chambre individuelle</div>
+                <div class="option-desc">Supplément chambre single (+300€)</div>
+              </div>
+            </div>
+
+            <!-- Demandes spéciales -->
+            <div class="mt-3">
+              <label class="form-label">Demandes spéciales ou informations complémentaires</label>
+              <textarea class="form-control" rows="5"
+                placeholder="Allergies alimentaires, besoins médicaux, préférences particulières..."></textarea>
+            </div>
+
+            <!-- Récapitulatif -->
+            <div class="recap-box">
+              <h5>Récapitulatif</h5>
+              <div class="price-line">
+                <span class="price-label">Prix total estimé :</span>
+                <span class="price-value" id="totalPrice">0€</span>
+              </div>
+              <div class="price-note">* Prix définitif confirmé après validation</div>
+            </div>
+
+            <!-- CGV -->
+            <div class="form-check cgv-check mt-4">
+              <input class="form-check-input" type="checkbox" id="cgv" />
+              <label class="form-check-label ms-2" for="cgv">
+                J'accepte les <a href="#">conditions générales de vente</a> et la <a href="#">politique de
+                  confidentialité</a> *
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <button class="btn btn-submit">Confirmer ma réservation</button>
+            <div class="secure-note">🔒 Paiement sécurisé – Vos données sont protégées</div>
+
+          </div><!-- /form-card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-brand">Oumra Prestige</p>
+          <p class="footer-desc">Votre partenaire de confiance pour un voyage spirituel inoubliable vers La Mecque.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-title">Liens Rapides</p>
+          <ul class="footer-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Réservation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-title">Contact</p>
+          <div class="footer-contact">
+            <p>📞 +227 23 45 67 89</p>
+            <p>✉️ contact@oumraprestige.ne</p>
+            <p>📍 Niamey, Niger</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-title">Suivez-nous</p>
+          <div>
+            <button class="social-btn"><i class="bi bi-facebook"></i></button>
+            <button class="social-btn"><i class="bi bi-linkedin"></i></button>
+            <button class="social-btn"><i class="bi bi-twitter-x"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" />
+      <p class="footer-copy text-center">© 2024 Oumra Prestige. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

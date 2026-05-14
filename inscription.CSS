@@ -1,0 +1,289 @@
+:root {
+    --op-gold: #D4A017;
+    --op-gold-dark: #b88a10;
+    --op-bg: #f4f4f4;
+    --op-dark: #0f1624;
+    --op-dark-2: #162032;
+}
+
+body {
+    background-color: var(--op-bg);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1a1a1a !important;
+}
+
+.brand-badge {
+    width: 36px;
+    height: 36px;
+    background: var(--op-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: .8rem;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: .9rem;
+}
+.btn-connexion {
+    border: 2px solid #6c757d;
+    color: #FFFFFF !important;
+    border-radius: 30px !important;
+    padding: 6px 20px;
+    font-weight: 500;
+    background-color: #5D6572 !important;
+}
+
+.btn-inscrire {
+     background: #D4A018 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 30px !important;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-inscrire:hover {
+    background: #f0c352 !important;
+    color: #fff;
+}
+
+.btn-connexion:hover {
+    background: #1e2e3e !important;
+    color: #fff;
+}
+/* ── Card ── */
+main {
+    flex: 1;
+}
+
+.register-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .07);
+    max-width: 440px;
+    width: 100%;
+}
+
+.avatar-circle {
+    width: 64px;
+    height: 64px;
+    background: var(--op-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem;
+}
+
+.avatar-circle i {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.register-card h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.register-card .subtitle {
+    color: #777;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: .35rem;
+}
+
+.form-control {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: .65rem 1rem;
+    font-size: .9rem;
+    color: #444;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+}
+
+.form-control:focus {
+    border-color: var(--op-gold);
+    box-shadow: 0 0 0 3px rgba(212, 160, 23, .15);
+}
+
+.hint-text {
+    font-size: .8rem;
+    color: #888;
+    margin-top: .3rem;
+}
+
+.form-check-label {
+    font-size: .85rem;
+    color: #555;
+    font-weight: 400;
+}
+
+.form-check-input:checked {
+    background-color: var(--op-gold);
+    border-color: var(--op-gold);
+}
+
+.gold-link {
+    color: var(--op-gold);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.gold-link:hover {
+    color: var(--op-gold-dark);
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background: var(--op-gold);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: .75rem;
+    font-weight: 600;
+    font-size: .95rem;
+    width: 100%;
+    transition: background .2s;
+}
+
+.btn-submit:hover {
+    background: var(--op-gold-dark);
+    color: #fff;
+}
+
+.signup-text {
+    font-size: .85rem;
+    color: #777;
+}
+
+.footer-note {
+    font-size: .8rem;
+    color: #888;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* ── Footer ── */
+footer {
+    background: var(--op-dark);
+    color: #ccc;
+    padding: 3rem 0 0;
+}
+
+footer .brand-name {
+    color: var(--op-gold);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+}
+
+footer p {
+    font-size: .9rem;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+footer h6 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+footer .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links li {
+    margin-bottom: .55rem;
+}
+
+footer .footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: .9rem;
+    transition: color .2s;
+}
+
+footer .footer-links a:hover {
+    color: #fff;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+    font-size: .9rem;
+    color: #aaa;
+    margin-bottom: .55rem;
+}
+
+.footer-contact-item i {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.social-btn {
+    width: 38px;
+    height: 38px;
+    background: #2a3548;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    text-decoration: none;
+    font-size: .9rem;
+    transition: background .2s, color .2s;
+}
+
+.social-btn:hover {
+    background: var(--op-gold);
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2a3548;
+    margin-top: 2.5rem;
+    padding: 1.2rem 0;
+    text-align: center;
+    font-size: .82rem;
+    color: #667;
+}
