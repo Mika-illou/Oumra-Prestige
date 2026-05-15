@@ -14,7 +14,6 @@ body {
     flex-direction: column;
 }
 
-/* ── Navbar ── */
 .navbar {
     background: #fff;
     border-bottom: 1px solid #e0e0e0;
@@ -47,6 +46,7 @@ body {
     color: #333 !important;
     font-size: .9rem;
 }
+
 .btn-connexion {
     border: 2px solid #6c757d;
     color: #FFFFFF !important;
@@ -57,7 +57,7 @@ body {
 }
 
 .btn-inscrire {
-     background: #D4A018 !important;
+    background: #D4A018 !important;
     color: #fff !important;
     border: none;
     border-radius: 30px !important;
@@ -75,7 +75,7 @@ body {
     background: #1e2e3e !important;
     color: #fff;
 }
-/* ── Card ── */
+
 main {
     flex: 1;
 }
@@ -178,7 +178,6 @@ label {
     font-weight: 600;
     font-size: .95rem;
     width: 100%;
-    transition: background .2s;
 }
 
 .btn-submit:hover {
@@ -198,7 +197,6 @@ label {
     margin-top: 1rem;
 }
 
-/* ── Footer ── */
 footer {
     background: var(--op-dark);
     color: #ccc;
@@ -271,7 +269,6 @@ footer .footer-links a:hover {
     color: #ccc;
     text-decoration: none;
     font-size: .9rem;
-    transition: background .2s, color .2s;
 }
 
 .social-btn:hover {

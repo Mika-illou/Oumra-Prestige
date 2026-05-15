@@ -18,7 +18,6 @@ body {
     background: #fff;
 }
 
-/* ── NAVBAR ── */
 .navbar {
     background: #fff;
     border-bottom: 1px solid #eee;
@@ -88,7 +87,6 @@ body {
     color: #fff;
 }
 
-/* ── HERO ── */
 .hero-contact {
     background: linear-gradient(135deg, #c8870a 0%, #e6a815 60%, #d4960a 100%);
     padding: 3.5rem 1rem 3rem;
@@ -109,13 +107,12 @@ body {
     margin: 0;
 }
 
-/* ── MAIN CONTENT ── */
+
 .contact-section {
     padding: 3rem 1rem 3.5rem;
     background: var(--bg-light);
 }
 
-/* ── FORM CARD ── */
 .form-card {
     background: #fff;
     border-radius: 16px;
@@ -179,7 +176,6 @@ textarea.form-control {
     cursor: pointer;
 }
 
-/* ── COORDONNEES CARD ── */
 .coord-card {
     background: #fff;
     border-radius: 16px;
@@ -247,7 +243,6 @@ textarea.form-control {
     margin: 0;
 }
 
-/* ── FAQ CARD ── */
 .faq-card {
     background: #fdf8ee;
     border-radius: 16px;
@@ -277,7 +272,6 @@ textarea.form-control {
     margin: 0;
 }
 
-/* ── MAP SECTION ── */
 .map-section {
     padding: 3rem 1rem;
     background: #f0f2f5;
@@ -368,7 +362,6 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    transition: background .2s, color .2s;
     margin-right: 0.4rem;
 }
 

@@ -7,7 +7,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* NAVBAR */
+
 .navbar {
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
@@ -61,8 +61,8 @@ body {
 }
 
 .btn-inscrire:hover {
-   background: #f2b552 !important;
-   color: #fff;
+    background: #f2b552 !important;
+    color: #fff;
 }
 
 .btn-connexion:hover {
@@ -70,9 +70,7 @@ body {
     color: #fff;
 }
 
-/* ── HERO 
 
-/* HERO */
 .hero {
     min-height: 90vh;
     background: linear-gradient(rgba(15, 20, 35, .45), rgba(15, 20, 35, .45)),
@@ -112,7 +110,7 @@ body {
     cursor: pointer;
 }
 
-/* SERVICES */
+
 .services {
     padding: 80px 0;
     background: #fff;
@@ -131,9 +129,9 @@ body {
     box-shadow: 0 2px 16px rgba(0, 0, 0, .07);
     height: 100%;
     transition: transform .2s;
-    /* text-align: start !important; */
 }
-.service-card:hover{
+
+.service-card:hover {
     transform: translateY(-4px);
     cursor: pointer;
 }
@@ -161,7 +159,7 @@ body {
     font-size: 1.4rem;
     color: #fff;
     margin-bottom: 20px;
-    
+
 }
 
 .ic-gold {
@@ -186,7 +184,6 @@ body {
     font-size: .95rem;
 }
 
-/* TESTIMONIALS */
 .testimonials {
     padding: 80px 0;
     background: #f8f9fa;
@@ -243,7 +240,6 @@ body {
     font-size: .93rem;
 }
 
-/* FOOTER */
 footer {
     background: var(--dark-navy);
     color: #ccc;

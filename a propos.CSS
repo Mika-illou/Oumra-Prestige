@@ -9,7 +9,7 @@ body {
     color: #333;
 }
 
-/* NAVBAR  */
+
 .navbar {
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
@@ -71,7 +71,7 @@ body {
     background: #1e2e3e !important;
     color: #fff;
 }
-/* MISSION */
+
 .mission {
     padding: 100px 0;
 }
@@ -103,7 +103,7 @@ body {
     object-fit: cover;
 }
 
-/*  VALEURS */
+
 .valeurs {
     padding: 80px 0;
     background: #f8f9fa;
@@ -178,7 +178,7 @@ body {
     margin: 0;
 }
 
-/* STATS  */
+
 .stats {
     background: var(--gold);
     padding: 60px 0;
@@ -197,7 +197,7 @@ body {
     margin-top: 6px;
 }
 
-/* CTA  */
+
 .cta {
     padding: 90px 0;
     text-align: center;
@@ -231,7 +231,7 @@ body {
     color: #fff;
 }
 
-/* FOOTER  */
+
 
 footer {
     background: var(--navy);

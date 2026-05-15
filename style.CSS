@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
 }
 
-/* ── Navbar ── */
 .navbar {
     background: #fff;
     border-bottom: 1px solid #e0e0e0;
@@ -73,7 +72,6 @@ body {
     background: #1e2e3e !important;
     color: #fff;
 }
-/* ── Card ── */
 .login-card {
     background: #fff;
     border-radius: 16px;
@@ -170,7 +168,6 @@ label {
     color: #fff;
 }
 
-/* ── OR divider ── */
 .divider {
     display: flex;
     align-items: center;
@@ -188,7 +185,6 @@ label {
     background: #e0e0e0;
 }
 
-/* ── Social buttons ── */
 .btn-social {
     width: 100%;
     background: #fff;
@@ -201,7 +197,6 @@ label {
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    transition: background .15s, border-color .15s;
     text-decoration: none;
 }
 
@@ -311,7 +306,6 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    transition: background .2s, color .2s;
     margin-right: 0.4rem;
 }
 

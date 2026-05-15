@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* ── NAVBAR ── */
 .navbar {
     background: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
@@ -73,7 +72,6 @@ body {
     color: #fff;
 }
 
-/* ── HERO BANNER ── */
 .hero-banner {
     background: var(--gold);
     padding: 60px 0;
@@ -104,7 +102,6 @@ body {
     box-shadow: 0 4px 24px rgba(0, 0, 0, .09);
 }
 
-/* Section title with numbered badge */
 .section-title {
     display: flex;
     align-items: center;
@@ -134,7 +131,6 @@ body {
     margin: 36px 0;
 }
 
-/* Inputs */
 .form-label {
     font-weight: 600;
     font-size: .88rem;
@@ -157,7 +153,6 @@ body {
     box-shadow: 0 0 0 3px rgba(245, 166, 35, .15);
 }
 
-/* Checkboxes */
 .option-item {
     margin-bottom: 18px;
 }
@@ -188,7 +183,6 @@ body {
     margin-top: 1px;
 }
 
-/* Récapitulatif */
 .recap-box {
     background: #fffbf0;
     border: 1.5px solid var(--gold);
@@ -226,7 +220,6 @@ body {
     margin-top: 6px;
 }
 
-/* CGV checkbox */
 .cgv-check .form-check-input {
     width: 17px;
     height: 17px;
@@ -248,7 +241,6 @@ body {
     font-size: .88rem;
 }
 
-/* Submit button */
 .btn-submit {
     background: var(--gold) !important;
     color: #fff;
@@ -275,7 +267,6 @@ body {
     margin-top: 10px;
 }
 
-/* ── FOOTER ── */
 footer {
     background: var(--navy);
     color: #ccc;
